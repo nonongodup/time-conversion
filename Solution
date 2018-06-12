@@ -1,0 +1,20 @@
+function timeConversion(s) {
+  // split time into hours, minutes and seconds
+var [hours, minutes, seconds] = s.split(':');
+
+//check if hours is 12 then replace it with 00
+  if (hours === '12') {
+    hours = '00';
+  }
+  
+  //taking substring from seconds 
+var sub = seconds.substring(2,4);
+  if (sub == 'PM') {
+    hours = parseInt(hours) + 12;
+  }
+    //taking substring from seconds to give final output without am or pm
+    var sec = seconds.substring(0,2);
+
+  return hours + ':' + minutes + ':' + sec;
+}
+
