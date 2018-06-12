@@ -1,4 +1,5 @@
 # time-conversion
+#javascript
 hackerrank answer: 
 convert 12 hour AM/PM format to military (24-hour) time.
 Given a time in -hour AM/PM format, convert it to military (24-hour) time.
